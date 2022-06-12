@@ -1,0 +1,1477 @@
+irtualBox:~/comp4812/sh_libs/ShareLibLinux$
+npant@npant-VirtualBox:~/comp4812/sh_libs/ShareLibLinux$
+npant@npant-VirtualBox:~/comp4812/sh_libs/ShareLibLinux$ make
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o boundary_mask_l1_mex.o boundary_mask_l1_mex.c
+boundary_mask_l1_mex.c: In function ‘boundary_mask_l1’:
+boundary_mask_l1_mex.c:33: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   33 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+boundary_mask_l1_mex.c:56: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   56 |         #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o boundary_mask_mex.o boundary_mask_mex.c
+boundary_mask_mex.c: In function ‘boundary_mask’:
+boundary_mask_mex.c:25:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   25 |     printf("INSIDE boundary_mask: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |     ^~~~~~
+boundary_mask_mex.c:25:5: warning: incompatible implicit declaration of built-in function ‘printf’
+boundary_mask_mex.c:5:1: note: include ‘<stdio.h>’ or provide a declaration of
+printf’
+    4 | #include "boundary_mask_mex.h"
+  +++ |+#include <stdio.h>
+    5 |
+boundary_mask_mex.c:25:40: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   25 |     printf("INSIDE boundary_mask: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |                                       ~^                     ~~
+      |                                        |                     |
+      |                                        int                   size_t {aka const long unsigned int}
+      |                                       %ld
+boundary_mask_mex.c:25:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   25 |     printf("INSIDE boundary_mask: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |                                               ~^                 ~~
+      |                                                |                 |
+      |                                                int               size_t {aka const long unsigned int}
+      |                                               %ld
+boundary_mask_mex.c:25:56: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   25 |     printf("INSIDE boundary_mask: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |                                                       ~^             ~~
+      |                                                        |             |
+      |                                                        int           size_t {aka const long unsigned int}
+      |                                                       %ld
+boundary_mask_mex.c:36: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   36 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+boundary_mask_mex.c:51: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   51 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+boundary_mask_mex.c:75: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   75 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o coarsen_grid_mex.o coarsen_grid_mex.c
+coarsen_grid_mex.c: In function ‘coarsen_grid’:
+coarsen_grid_mex.c:35:39: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   35 |     printf("INSIDE coarsen_grid: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |                                      ~^                     ~~
+      |                                       |                     |
+      |                                       int                   size_t {aka const long unsigned int}
+      |                                      %ld
+coarsen_grid_mex.c:35:47: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   35 |     printf("INSIDE coarsen_grid: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |                                              ~^                 ~~
+      |                                               |                 |
+      |                                               int               size_t {aka const long unsigned int}
+      |                                              %ld
+coarsen_grid_mex.c:35:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   35 |     printf("INSIDE coarsen_grid: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |                                                      ~^             ~~
+      |                                                       |             |
+      |                                                       int           size_t {aka const long unsigned int}
+      |                                                      %ld
+coarsen_grid_mex.c:36:40: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   36 |     printf("INSIDE coarsen_grid: nx2= %d  ny2= %d  nz2= %d\n", nx2, ny2, nz2);
+      |                                       ~^                       ~~~
+      |                                        |                       |
+      |                                        int                     size_t {aka const long unsigned int}
+      |                                       %ld
+coarsen_grid_mex.c:36:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   36 |     printf("INSIDE coarsen_grid: nx2= %d  ny2= %d  nz2= %d\n", nx2, ny2, nz2);
+      |                                                ~^                   ~~~
+      |                                                 |                   |
+      |                                                 int                 size_t {aka const long unsigned int}
+      |                                                %ld
+coarsen_grid_mex.c:36:58: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   36 |     printf("INSIDE coarsen_grid: nx2= %d  ny2= %d  nz2= %d\n", nx2, ny2, nz2);
+      |                                                         ~^               ~~~
+      |                                                          |               |
+      |                                                          int             size_t {aka const long unsigned int}
+      |                                                         %ld
+coarsen_grid_mex.c:45: warning: ignoring #pragma omp parallel [-Wunknown-pragma
+]
+   45 |     #pragma omp parallel for private(l2) schedule(static) \
+      |
+coarsen_grid_mex.c:51: warning: ignoring #pragma omp parallel [-Wunknown-pragma
+]
+   51 |     #pragma omp parallel for private(i2,j2,k2,lk2,l2,i,j,k,lk,l,bi,bj,bk) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o correct_mex.o correct_mex.c
+correct_mex.c: In function ‘correctf’:
+correct_mex.c:41: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   41 |     #pragma omp parallel for private(i2,j2,k2,l2,lk2,l,lk) schedule(static) \
+      |
+correct_mex.c:17:18: warning: unused variable ‘nz’ [-Wunused-variable]
+   17 |     const size_t nz = sz[2];
+      |                  ^~
+correct_mex.c: In function ‘correctd’:
+correct_mex.c:158: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  158 |     #pragma omp parallel for private(i2,j2,k2,l2,lk2,l,lk) schedule(static) \
+      |
+correct_mex.c:134:18: warning: unused variable ‘nz’ [-Wunused-variable]
+  134 |     const size_t nz = sz[2];
+      |                  ^~
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o fmg_mex.o fmg_mex.c
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gauss_seidel_mex.o gauss_seidel_mex.c
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradb_adj_mex.o gradb_adj_mex.c
+gradb_adj_mex.c: In function ‘gradb_adjf’:
+gradb_adj_mex.c:26: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   26 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradb_adj_mex.c:28: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   28 |     #pragma omp for schedule(static)
+      |
+gradb_adj_mex.c:67: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   67 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradb_adj_mex.c:79: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   79 |     #pragma omp for schedule(static)
+      |
+gradb_adj_mex.c:89: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   89 |     #pragma omp for schedule(static)
+      |
+gradb_adj_mex.c: In function ‘gradb_adjd’:
+gradb_adj_mex.c:132: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  132 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradb_adj_mex.c:134: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  134 |     #pragma omp for schedule(static)
+      |
+gradb_adj_mex.c:173: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  173 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradb_adj_mex.c:185: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  185 |     #pragma omp for schedule(static)
+      |
+gradb_adj_mex.c:195: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  195 |     #pragma omp for schedule(static)
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradb_mex.o gradb_mex.c
+gradb_mex.c: In function ‘gradbf’:
+gradb_mex.c:28: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   28 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradb_mex.c:31: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   31 |     #pragma omp for schedule(static)
+      |
+gradb_mex.c:39: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   39 |     #pragma omp for schedule(static)
+      |
+gradb_mex.c:47: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   47 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradb_mex.c:58: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   58 |     #pragma omp for schedule(static)
+      |
+gradb_mex.c: In function ‘gradbd’:
+gradb_mex.c:119: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  119 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradb_mex.c:122: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  122 |     #pragma omp for schedule(static)
+      |
+gradb_mex.c:130: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  130 |     #pragma omp for schedule(static)
+      |
+gradb_mex.c:138: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  138 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradb_mex.c:149: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  149 |     #pragma omp for schedule(static)
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradbm_adj_mex.o gradbm_adj_mex.c
+gradbm_adj_mex.c: In function ‘gradbm_adjf’:
+gradbm_adj_mex.c:29: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   29 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gradbm_adj_mex.c: In function ‘gradbm_adjd’:
+gradbm_adj_mex.c:85: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   85 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradbm_mex.o gradbm_mex.c
+gradbm_mex.c: In function ‘gradbmf’:
+gradbm_mex.c:36: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   36 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gradbm_mex.c: In function ‘gradbmd’:
+gradbm_mex.c:88: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   88 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradc_mex.o gradc_mex.c
+gradc_mex.c: In function ‘gradcf’:
+gradc_mex.c:35: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   35 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradc_mex.c:38: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   38 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:46: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   46 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:54: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   54 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradc_mex.c:65: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+   65 |     #pragma omp single
+      |
+gradc_mex.c:74: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   74 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:83: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+   83 |     #pragma omp single
+      |
+gradc_mex.c:92: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   92 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:101: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  101 |     #pragma omp single
+      |
+gradc_mex.c:111: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  111 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:178: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  178 |     #pragma omp single
+      |
+gradc_mex.c:187: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  187 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:196: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  196 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:205: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  205 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradc_mex.c:216: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  216 |     #pragma omp single
+      |
+gradc_mex.c:225: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  225 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:234: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  234 |     #pragma omp single
+      |
+gradc_mex.c:243: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  243 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c: In function ‘gradcd’:
+gradc_mex.c:293: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  293 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradc_mex.c:296: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  296 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:304: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  304 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:312: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  312 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradc_mex.c:323: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  323 |     #pragma omp single
+      |
+gradc_mex.c:332: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  332 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:341: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  341 |     #pragma omp single
+      |
+gradc_mex.c:350: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  350 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:359: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  359 |     #pragma omp single
+      |
+gradc_mex.c:369: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  369 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:436: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  436 |     #pragma omp single
+      |
+gradc_mex.c:445: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  445 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:454: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  454 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:463: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  463 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradc_mex.c:474: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  474 |     #pragma omp single
+      |
+gradc_mex.c:483: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  483 |     #pragma omp for schedule(static)
+      |
+gradc_mex.c:492: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+  492 |     #pragma omp single
+      |
+gradc_mex.c:501: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  501 |     #pragma omp for schedule(static)
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradcm_mex.o gradcm_mex.c
+gradcm_mex.c: In function ‘gradcmf’:
+gradcm_mex.c:31: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   31 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gradcm_mex.c: In function ‘gradcmd’:
+gradcm_mex.c:99: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   99 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradf_adj_mex.o gradf_adj_mex.c
+gradf_adj_mex.c: In function ‘gradf_adjf’:
+gradf_adj_mex.c:30: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   30 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradf_adj_mex.c:33: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   33 |     #pragma omp for schedule(static)
+      |
+gradf_adj_mex.c:42: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   42 |     #pragma omp for schedule(static)
+      |
+gradf_adj_mex.c:51: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   51 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradf_adj_mex.c:63: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   63 |     #pragma omp for schedule(static)
+      |
+gradf_adj_mex.c: In function ‘gradf_adjd’:
+gradf_adj_mex.c:130: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  130 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradf_adj_mex.c:133: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  133 |     #pragma omp for schedule(static)
+      |
+gradf_adj_mex.c:142: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  142 |     #pragma omp for schedule(static)
+      |
+gradf_adj_mex.c:151: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  151 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradf_adj_mex.c:163: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  163 |     #pragma omp for schedule(static)
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradf_mex.o gradf_mex.c
+gradf_mex.c: In function ‘gradff’:
+gradf_mex.c:25: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   25 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradf_mex.c:27: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   27 |     #pragma omp for schedule(static)
+      |
+gradf_mex.c:62: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   62 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradf_mex.c:74: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   74 |     #pragma omp for schedule(static)
+      |
+gradf_mex.c:84: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   84 |     #pragma omp for schedule(static)
+      |
+gradf_mex.c: In function ‘gradfd’:
+gradf_mex.c:124: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  124 | #pragma omp parallel private(i,j,k,l) if (nxny*nz > 16*16*16)
+      |
+gradf_mex.c:126: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  126 |     #pragma omp for schedule(static)
+      |
+gradf_mex.c:161: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  161 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradf_mex.c:173: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  173 |     #pragma omp for schedule(static)
+      |
+gradf_mex.c:183: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  183 |     #pragma omp for schedule(static)
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradfm_adj_mex.o gradfm_adj_mex.c
+gradfm_adj_mex.c: In function ‘gradfm_adjf’:
+gradfm_adj_mex.c:29: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   29 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gradfm_adj_mex.c: In function ‘gradfm_adjd’:
+gradfm_adj_mex.c:85: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   85 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradfm_mex.o gradfm_mex.c
+gradfm_mex.c: In function ‘gradfmf’:
+gradfm_mex.c:27: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   27 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gradfm_mex.c: In function ‘gradfmd’:
+gradfm_mex.c:79: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   79 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradfp_adj_mex.o gradfp_adj_mex.c
+In file included from gradfp_adj_mex.c:3:
+matlab_mex.h:25:37: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   25 | extern void update_duald_tgv(struct PD* pd,
+      |                                     ^~
+matlab_mex.h:29:37: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   29 | extern void update_dualf_tgv(struct PD* pd,
+      |                                     ^~
+matlab_mex.h:33:39: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   33 | extern void update_primald_tgv(struct PD* pd,
+      |                                       ^~
+matlab_mex.h:37:39: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   37 | extern void update_primalf_tgv(struct PD* pd,
+      |                                       ^~
+matlab_mex.h:51:36: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   51 | extern void update_duald_tv(struct PD* pd,
+      |                                    ^~
+matlab_mex.h:55:36: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   55 | extern void update_dualf_tv(struct PD* pd,
+      |                                    ^~
+matlab_mex.h:60:38: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   60 | extern void update_primald_tv(struct PD* pd,
+      |                                      ^~
+matlab_mex.h:63:38: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | extern void update_primalf_tv(struct PD* pd,
+      |                                      ^~
+gradfp_adj_mex.c: In function ‘gradfp_adjf’:
+gradfp_adj_mex.c:35: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   35 | #pragma omp parallel private(i,j,k,l)
+      |
+gradfp_adj_mex.c:38: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   38 |     #pragma omp for schedule(static)
+      |
+gradfp_adj_mex.c:47: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   47 |     #pragma omp for schedule(static)
+      |
+gradfp_adj_mex.c:56: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   56 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradfp_adj_mex.c:68: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   68 |     #pragma omp for schedule(static)
+      |
+gradfp_adj_mex.c: In function ‘gradfp_adjd’:
+gradfp_adj_mex.c:139: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  139 | #pragma omp parallel private(i,j,k,l)
+      |
+gradfp_adj_mex.c:142: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  142 |     #pragma omp for schedule(static)
+      |
+gradfp_adj_mex.c:151: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  151 |     #pragma omp for schedule(static)
+      |
+gradfp_adj_mex.c:160: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  160 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradfp_adj_mex.c:172: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  172 |     #pragma omp for schedule(static)
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o gradfp_mex.o gradfp_mex.c
+gradfp_mex.c: In function ‘gradfpf’:
+gradfp_mex.c:25: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   25 | #pragma omp parallel private(i,j,k,l)
+      |
+gradfp_mex.c:27: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   27 |     #pragma omp for schedule(static)
+      |
+gradfp_mex.c:62: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   62 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradfp_mex.c:73: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   73 |     #pragma omp for schedule(static)
+      |
+gradfp_mex.c:82: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+   82 |     #pragma omp for schedule(static)
+      |
+gradfp_mex.c: In function ‘gradfpd’:
+gradfp_mex.c:123: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  123 | #pragma omp parallel private(i,j,k,l)
+      |
+gradfp_mex.c:125: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  125 |     #pragma omp for schedule(static)
+      |
+gradfp_mex.c:160: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  160 |     #pragma omp for schedule(static) collapse(2)
+      |
+gradfp_mex.c:171: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  171 |     #pragma omp for schedule(static)
+      |
+gradfp_mex.c:180: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+  180 |     #pragma omp for schedule(static)
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o lap1_mex.o lap1_mex.c
+lap1_mex.c:8:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+    8 | float static cf(const float *u, size_t l, size_t a, size_t N, size_t i, const uint8_t *G);
+      | ^~~~~
+lap1_mex.c:9:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+    9 | float static ff(const float *u, size_t l, size_t a, size_t N, size_t i, const uint8_t *G);
+      | ^~~~~
+lap1_mex.c:10:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+   10 | float static bf(const float *u, size_t l, size_t a, size_t N, size_t i, const uint8_t *G);
+      | ^~~~~
+lap1_mex.c:11:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+   11 | float static of(const float *u, size_t l, size_t a, size_t N, size_t i, const uint8_t *G);
+      | ^~~~~
+lap1_mex.c:13:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+   13 | double static cd(const double *u, size_t l, size_t a, size_t N, size_t i, const uint8_t *G);
+      | ^~~~~~
+lap1_mex.c:14:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+   14 | double static fd(const double *u, size_t l, size_t a, size_t N, size_t i, const uint8_t *G);
+      | ^~~~~~
+lap1_mex.c:15:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+   15 | double static bd(const double *u, size_t l, size_t a, size_t N, size_t i, const uint8_t *G);
+      | ^~~~~~
+lap1_mex.c:16:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+   16 | double static od(const double *u, size_t l, size_t a, size_t N, size_t i, const uint8_t *G);
+      | ^~~~~~
+lap1_mex.c: In function ‘lapf’:
+lap1_mex.c:59: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   59 |     #pragma omp parallel for private(i,j,k,l,idx) schedule(static) \
+      |
+lap1_mex.c: In function ‘lapd’:
+lap1_mex.c:131: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  131 |     #pragma omp parallel for private(i,j,k,l,idx) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o lapmg_mex.o lapmg_mex.c
+lapmg_mex.c: In function ‘lapmgf’:
+lapmg_mex.c:27: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   27 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+lapmg_mex.c: In function ‘lapmgd’:
+lapmg_mex.c:69:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   69 |     printf("INSIDE lapmgd: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |     ^~~~~~
+lapmg_mex.c:69:5: warning: incompatible implicit declaration of built-in function ‘printf’
+lapmg_mex.c:5:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    4 | #include "lapmg_mex.h"
+  +++ |+#include <stdio.h>
+    5 |
+lapmg_mex.c:69:33: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   69 |     printf("INSIDE lapmgd: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |                                ~^                     ~~
+      |                                 |                     |
+      |                                 int                   size_t {aka const long unsigned int}
+      |                                %ld
+lapmg_mex.c:69:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   69 |     printf("INSIDE lapmgd: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |                                        ~^                 ~~
+      |                                         |                 |
+      |                                         int               size_t {aka const long unsigned int}
+      |                                        %ld
+lapmg_mex.c:69:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   69 |     printf("INSIDE lapmgd: nx= %d  ny= %d  nz= %d\n", nx, ny, nz);
+      |                                                ~^             ~~
+      |                                                 |             |
+      |                                                 int           size_t {aka const long unsigned int}
+      |                                                %ld
+lapmg_mex.c:72: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   72 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o lapw_mex.o lapw_mex.c
+lapw_mex.c: In function ‘lapwf’:
+lapw_mex.c:37: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   37 |     #pragma omp parallel for private(i,j,k,l,ub,uf) schedule(static) \
+      |
+lapw_mex.c: In function ‘lapwd’:
+lapw_mex.c:95: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   95 |     #pragma omp parallel for private(i,j,k,l,ub,uf) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o mg_mex.o mg_mex.c
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o mgpcg_mex.o mgpcg_mex.c
+In file included from mgpcg_mex.c:13:
+matlab_mex.h:25:37: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   25 | extern void update_duald_tgv(struct PD* pd,
+      |                                     ^~
+matlab_mex.h:29:37: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   29 | extern void update_dualf_tgv(struct PD* pd,
+      |                                     ^~
+matlab_mex.h:33:39: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   33 | extern void update_primald_tgv(struct PD* pd,
+      |                                       ^~
+matlab_mex.h:37:39: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   37 | extern void update_primalf_tgv(struct PD* pd,
+      |                                       ^~
+matlab_mex.h:51:36: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   51 | extern void update_duald_tv(struct PD* pd,
+      |                                    ^~
+matlab_mex.h:55:36: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   55 | extern void update_dualf_tv(struct PD* pd,
+      |                                    ^~
+matlab_mex.h:60:38: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   60 | extern void update_primald_tv(struct PD* pd,
+      |                                      ^~
+matlab_mex.h:63:38: warning: ‘struct PD’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | extern void update_primalf_tv(struct PD* pd,
+      |                                      ^~
+mgpcg_mex.c: In function ‘mx_cycle’:
+mgpcg_mex.c:68:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   68 | INSIDE mx_cycle : BEFORE  mx_restrict : SIZE OF mg[l+1].f : [%d] [%d] [%d]\n",
+      |                                                              ~^
+      |                                                               |
+      |                                                               int
+      |                                                              %ld
+   69 |                                                   mg[l+1].szf[0], mg[l+1].szf[1], mg[l+1].szf[2]);
+      |                                                   ~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              size_t {aka long unsigned int}
+
+mgpcg_mex.c:68:84: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   68 | INSIDE mx_cycle : BEFORE  mx_restrict : SIZE OF mg[l+1].f : [%d] [%d] [%d]\n",
+      |                                                                   ~^
+      |                                                                    |
+      |                                                                    int
+      |                                                                   %ld
+   69 |                                                   mg[l+1].szf[0], mg[l+1].szf[1], mg[l+1].szf[2]);
+      |                                                                   ~~~~~~~~~~~~~~
+      |                                                                              |
+      |                                                                              size_t {aka long unsigned int}
+
+mgpcg_mex.c:68:89: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   68 | ycle : BEFORE  mx_restrict : SIZE OF mg[l+1].f : [%d] [%d] [%d]\n",
+      |                                                             ~^
+      |                                                              |
+      |                                                              int
+      |                                                             %ld
+   69 |                                        mg[l+1].szf[0], mg[l+1].szf[1], mg[l+1].szf[2]);
+      |                                                                        ~~~~~~~~~~~~~~
+      |                                                                                   |
+      |                                                                                   size_t {aka long unsigned int}
+
+mgpcg_mex.c:75:78: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   75 | ("INSIDE mx_cycle : AFTER  mx_restrict : SIZE OF mg[l+1].f : [%d] [%d] [%d]\n",
+      |                                                               ~^
+      |                                                                |
+      |                                                                int
+      |                                                               %ld
+   76 |                                                    mg[l+1].szf[0], mg[l+1].szf[1], mg[l+1].szf[2]);
+      |                                                    ~~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               size_t {aka long unsigned int}
+
+mgpcg_mex.c:75:83: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   75 | ("INSIDE mx_cycle : AFTER  mx_restrict : SIZE OF mg[l+1].f : [%d] [%d] [%d]\n",
+      |                                                                    ~^
+      |                                                                     |
+      |                                                                     int
+      |                                                                    %ld
+   76 |                                                    mg[l+1].szf[0], mg[l+1].szf[1], mg[l+1].szf[2]);
+      |                                                                    ~~~~~~~~~~~~~~
+      |                                                                               |
+      |                                                                               size_t {aka long unsigned int}
+
+mgpcg_mex.c:75:88: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+   75 | cycle : AFTER  mx_restrict : SIZE OF mg[l+1].f : [%d] [%d] [%d]\n",
+      |                                                             ~^
+      |                                                              |
+      |                                                              int
+      |                                                             %ld
+   76 |                                        mg[l+1].szf[0], mg[l+1].szf[1], mg[l+1].szf[2]);
+      |                                                                        ~~~~~~~~~~~~~~
+      |                                                                                   |
+      |                                                                                   size_t {aka long unsigned int}
+
+mgpcg_mex.c:101:54: warning: passing argument 2 of ‘mx_nrm2’ makes integer from pointer without a cast [-Wint-conversion]
+  101 |         const double reltol = tol * mx_nrm2(mg[l].f, (const size_t*)mg[l].szf);
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      const size_t * {aka const long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:11:55: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+   11 | extern double mx_nrm2(const double *mxx, const size_t szz);
+      |                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:113:47: warning: passing argument 2 of ‘mx_nrm2’ makes integer from pointer without a cast [-Wint-conversion]
+  113 |             double tempTol = mx_nrm2(mg[l].r, (const size_t*)mg[l].szr);
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               const size_t * {aka const long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:11:55: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+   11 | extern double mx_nrm2(const double *mxx, const size_t szz);
+      |                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:116:34: warning: passing argument 2 of ‘mx_nrm2’ makes integer from pointer without a cast [-Wint-conversion]
+  116 |             if (mx_nrm2(mg[l].r, (const size_t*)mg[l].szr) <= reltol) {
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  const size_t * {aka const long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:11:55: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+   11 | extern double mx_nrm2(const double *mxx, const size_t szz);
+      |                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c: In function ‘mx_mg’:
+mgpcg_mex.c:132:65: warning: passing argument 2 of ‘mx_nrm2’ makes integer from pointer without a cast [-Wint-conversion]
+  132 |         const double reltol = iter->tol * mx_nrm2(mg[0].f, mg[0].szf);
+      |                                                            ~~~~~^~~~
+      |                                                                 |
+      |                                                                 size_t * {aka long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:11:55: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
+   11 | extern double mx_nrm2(const double *mxx, const size_t szz);
+      |                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:137:53: warning: passing argument 2 of ‘mx_nrm2’ makes integer from pointer without a cast [-Wint-conversion]
+  137 |             const double tempVal = mx_nrm2(mg[0].r, (const size_t*)mg[0].szr);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |
+      |                                                     const size_t * {aka const long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:11:55: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+   11 | extern double mx_nrm2(const double *mxx, const size_t szz);
+      |                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:141:34: warning: passing argument 2 of ‘mx_nrm2’ makes integer from pointer without a cast [-Wint-conversion]
+  141 |             if (mx_nrm2(mg[0].r, (const size_t*)mg[0].szr) < reltol) {
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  const size_t * {aka const long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:11:55: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+   11 | extern double mx_nrm2(const double *mxx, const size_t szz);
+      |                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c: In function ‘mx_pcg’:
+mgpcg_mex.c:180:35: warning: passing argument 2 of ‘mx_nrm2’ makes integer from pointer without a cast [-Wint-conversion]
+  180 |     double res = mx_nrm2(mg[0].f, (const size_t*)mg[0].szf);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                   |
+      |                                   const size_t * {aka const long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:11:55: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+   11 | extern double mx_nrm2(const double *mxx, const size_t szz);
+      |                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:198:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+  198 |     for (int i = 0; i < num_szv; i++)
+      |                       ^
+mgpcg_mex.c:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+  204 |     for (int i = 0; i < num_szv; i++)
+      |                       ^
+mgpcg_mex.c:209:5: warning: implicit declaration of function ‘lapmgd’; did you mean ‘lapd’? [-Wimplicit-function-declaration]
+  209 |     lapmgd(q, x, G, h, mg[0].szv);
+      |     ^~~~~~
+      |     lapd
+mgpcg_mex.c:211:22: warning: passing argument 3 of ‘mx_scal’ makes integer from pointer without a cast [-Wint-conversion]
+  211 |     mx_scal(-ONE, q, szv);       /* q = Ax; */
+      |                      ^~~
+      |                      |
+      |                      const size_t * {aka const long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:6:63: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+    6 | extern void mx_scal(const double a, double *mxx, const size_t szz);
+      |                                                  ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:212:25: warning: passing argument 4 of ‘mx_axpy’ makes integer from pointer without a cast [-Wint-conversion]
+  212 |     mx_axpy(-ONE, q, r, szf);    /* r = r - q; */
+      |                         ^~~
+      |                         |
+      |                         const size_t * {aka const long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:8:82: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+    8 | const double a, const double *mxx, double *mxy, const size_t szz);
+      |                                                 ~~~~~~~~~~~~~^~~
+
+mgpcg_mex.c:213:22: warning: passing argument 2 of ‘mx_nrm2’ makes integer from pointer without a cast [-Wint-conversion]
+  213 |     res = mx_nrm2(r, szf);
+      |                      ^~~
+      |                      |
+      |                      const size_t * {aka const long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:11:55: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+   11 | extern double mx_nrm2(const double *mxx, const size_t szz);
+      |                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:229:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+  229 |         for (int i = 0; i < num_szv; i++)
+      |                           ^
+mgpcg_mex.c:232:25: warning: passing argument 3 of ‘mx_mg’ from incompatible pointer type [-Wincompatible-pointer-types]
+  232 |         mx_mg(mg, iter, szz);        /* q = M\r */
+      |                         ^~~
+      |                         |
+      |                         const size_t * {aka const long unsigned int *}
+mgpcg_mex.c:129:62: note: expected ‘const uint8_t *’ {aka ‘const unsigned char
+’} but argument is of type ‘const size_t *’ {aka ‘const long unsigned int *’}
+  129 | mx_mg(struct MG* mg, const struct Iter* iter, const uint8_t* szz)
+      |                                               ~~~~~~~~~~~~~~~^~~
+mgpcg_mex.c:235:33: warning: passing argument 3 of ‘mx_dot’ makes integer from pointer without a cast [-Wint-conversion]
+  235 |         rho = mx_dot(r, q, mg[0].szv);     /* rho = r'.q */
+      |                            ~~~~~^~~~
+      |                                 |
+      |                                 size_t * {aka long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:10:71: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
+   10 | extern double mx_dot(const double*mxx, const double*mxy, const size_t szz);
+      |                                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:241:31: warning: passing argument 3 of ‘mx_scal’ makes integer from pointer without a cast [-Wint-conversion]
+  241 |         mx_scal(beta, p, mg[0].szv);
+      |                          ~~~~~^~~~
+      |                               |
+      |                               size_t * {aka long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:6:63: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
+    6 | extern void mx_scal(const double a, double *mxx, const size_t szz);
+      |                                                  ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:242:33: warning: passing argument 4 of ‘mx_axpy’ makes integer from pointer without a cast [-Wint-conversion]
+  242 |         mx_axpy(ONE, q, p, mg[0].szv);     /* p = q + beta * p */
+      |                            ~~~~~^~~~
+      |                                 |
+      |                                 size_t * {aka long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:8:82: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
+    8 | const double a, const double *mxx, double *mxy, const size_t szz);
+      |                                                 ~~~~~~~~~~~~~^~~
+
+mgpcg_mex.c:245:31: warning: passing argument 3 of ‘mx_scal’ makes integer from pointer without a cast [-Wint-conversion]
+  245 |         mx_scal(-ONE, q, mg[0].szv);       /* q = Ap */
+      |                          ~~~~~^~~~
+      |                               |
+      |                               size_t * {aka long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:6:63: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
+    6 | extern void mx_scal(const double a, double *mxx, const size_t szz);
+      |                                                  ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:246:37: warning: passing argument 3 of ‘mx_dot’ makes integer from pointer without a cast [-Wint-conversion]
+  246 |         a = rho / mx_dot(p, q, mg[0].szv); /* a = r'.q / p'.Ap */
+      |                                ~~~~~^~~~
+      |                                     |
+      |                                     size_t * {aka long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:10:71: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
+   10 | extern double mx_dot(const double*mxx, const double*mxy, const size_t szz);
+      |                                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:250:31: warning: passing argument 4 of ‘mx_axpy’ makes integer from pointer without a cast [-Wint-conversion]
+  250 |         mx_axpy(a, p, x, mg[0].szv);       /* x = x + a * p */
+      |                          ~~~~~^~~~
+      |                               |
+      |                               size_t * {aka long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:8:82: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
+    8 | const double a, const double *mxx, double *mxy, const size_t szz);
+      |                                                 ~~~~~~~~~~~~~^~~
+
+mgpcg_mex.c:251:32: warning: passing argument 4 of ‘mx_axpy’ makes integer from pointer without a cast [-Wint-conversion]
+  251 |         mx_axpy(-a, q, r, mg[0].szv);      /* r = r - a * q */
+      |                           ~~~~~^~~~
+      |                                |
+      |                                size_t * {aka long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:8:82: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
+    8 | const double a, const double *mxx, double *mxy, const size_t szz);
+      |                                                 ~~~~~~~~~~~~~^~~
+
+mgpcg_mex.c:253:31: warning: passing argument 2 of ‘mx_nrm2’ makes integer from pointer without a cast [-Wint-conversion]
+  253 |         res = mx_nrm2(r, mg[0].szv);
+      |                          ~~~~~^~~~
+      |                               |
+      |                               size_t * {aka long unsigned int *}
+In file included from mgpcg_mex.c:8:
+mx_blas.h:11:55: note: expected ‘size_t’ {aka ‘const long unsigned int’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
+   11 | extern double mx_nrm2(const double *mxx, const size_t szz);
+      |                                          ~~~~~~~~~~~~~^~~
+mgpcg_mex.c:164:44: warning: unused parameter ‘verbose’ [-Wunused-parameter]
+  164 |     const struct Iter* iter, const uint8_t verbose,
+      |                              ~~~~~~~~~~~~~~^~~~~~~
+mgpcg_mex.c:167:19: warning: unused parameter ‘szG’ [-Wunused-parameter]
+  167 |     const size_t* szG,
+      |     ~~~~~~~~~~~~~~^~~
+mgpcg_mex.c: In function ‘mgpcg_init’:
+mgpcg_mex.c:302:46: warning: passing argument 2 of ‘mx_pad_boundary’ from incompatible pointer type [-Wincompatible-pointer-types]
+  302 |     double* mxGp = mx_pad_boundary(size_szG, mxG, new_szG);
+      |                                              ^~~
+      |                                              |
+      |                                              const uint8_t * {aka const unsigned char *}
+In file included from mgpcg_mex.c:9:
+mx_util.h:7:9: note: expected ‘const double *’ but argument is of type ‘const uint8_t *’ {aka ‘const unsigned char *’}
+    7 | double* mx_pad_boundary(const size_t* sz, const double* mxx, size_t* new_sz);
+      |         ^~~~~~~~~~~~~~~
+mgpcg_mex.c:314:13: warning: assignment to ‘uint8_t *’ {aka ‘unsigned char *’} from incompatible pointer type ‘double *’ [-Wincompatible-pointer-types]
+  314 |     mg[0].G = mxGp;
+      |             ^
+mgpcg_mex.c:327:27: warning: comparison of integer expressions of different signedness: ‘int32_t’ {aka ‘int’} and ‘size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+  327 |     for (int32_t i = 1; i < l; ++i) {
+      |                           ^
+mgpcg_mex.c: In function ‘mgpcg’:
+mgpcg_mex.c:471:16: warning: passing argument 1 of ‘mgpcg_init’ from incompatible pointer type [-Wincompatible-pointer-types]
+  471 |     mgpcg_init(&mg, szv, v, szm, f, szm, mask, szz, vsz, iter.l);
+      |                ^~~
+      |                |
+      |                struct MG (*)[16]
+mgpcg_mex.c:283:23: note: expected ‘struct MG *’ but argument is of type ‘struct MG (*)[16]’
+  283 | mgpcg_init(struct MG* mg,
+      |            ~~~~~~~~~~~^~
+mgpcg_mex.c:471:42: warning: passing argument 7 of ‘mgpcg_init’ from incompatible pointer type [-Wincompatible-pointer-types]
+  471 |     mgpcg_init(&mg, szv, v, szm, f, szm, mask, szz, vsz, iter.l);
+      |                                          ^~~~
+      |                                          |
+      |                                          double *
+mgpcg_mex.c:286:39: note: expected ‘const uint8_t *’ {aka ‘const unsigned char
+’} but argument is of type ‘double *’
+  286 |     const size_t* szG, const uint8_t* mxG,  // G
+      |                        ~~~~~~~~~~~~~~~^~~
+mgpcg_mex.c:476:5: warning: implicit declaration of function ‘memset’ [-Wimplicit-function-declaration]
+  476 |     memset(x, 0, num_szv);
+      |     ^~~~~~
+mgpcg_mex.c:476:5: warning: incompatible implicit declaration of built-in function ‘memset’
+mgpcg_mex.c:15:1: note: include ‘<string.h>’ or provide a declaration of ‘memse
+’
+   14 | #include <stdio.h>
+  +++ |+#include <string.h>
+   15 | #include <stdlib.h>
+mgpcg_mex.c:491:12: warning: ‘return’ with a value, in function returning void
+-Wreturn-type]
+  491 |     return NULL;
+      |            ^~~~
+mgpcg_mex.c:362:6: note: declared here
+  362 | void mgpcg(const uint8_t* szv_in, double* v,
+      |      ^~~~~
+mgpcg_mex.c:451:18: warning: unused variable ‘szf’ [-Wunused-variable]
+  451 |     const size_t szf[] = { szf_in[0], szf_in[1], szf_in[2] };
+      |                  ^~~
+mgpcg_mex.c:376:20: warning: unused parameter ‘szz_out’ [-Wunused-parameter]
+  376 |     const uint8_t* szz_out,
+      |     ~~~~~~~~~~~~~~~^~~~~~~
+mgpcg_mex.c:377:13: warning: unused parameter ‘out_mat’ [-Wunused-parameter]
+  377 |     double* out_mat)
+      |     ~~~~~~~~^~~~~~~
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o norm2_mex.o norm2_mex.c
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o pd_tgv_mex.o pd_tgv_mex.c
+pd_tgv_mex.c: In function ‘mx_pdf’:
+pd_tgv_mex.c:60:36: warning: implicit declaration of function ‘mxGetNumberOfElements’ [-Wimplicit-function-declaration]
+   60 |     const size_t N = (const size_t)mxGetNumberOfElements(mxpd->f);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~
+pd_tgv_mex.c:61:40: warning: implicit declaration of function ‘mxGetDimensions’ [-Wimplicit-function-declaration]
+   61 |     const size_t *sz = (const size_t *)mxGetDimensions(mxpd->f);
+      |                                        ^~~~~~~~~~~~~~~
+pd_tgv_mex.c:61:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   61 |     const size_t *sz = (const size_t *)mxGetDimensions(mxpd->f);
+      |                        ^
+pd_tgv_mex.c:65:24: warning: implicit declaration of function ‘mxGetData’ [-Wimplicit-function-declaration]
+   65 |     pd.chi  = (float *)mxGetData(mxpd->chi);
+      |                        ^~~~~~~~~
+pd_tgv_mex.c:65:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   65 |     pd.chi  = (float *)mxGetData(mxpd->chi);
+      |               ^
+pd_tgv_mex.c:66:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   66 |     pd.eta  = (float *)mxGetData(mxpd->eta);
+      |               ^
+pd_tgv_mex.c:67:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   67 |     pd.w    = (float *)mxGetData(mxpd->w);
+      |               ^
+pd_tgv_mex.c:68:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   68 |     pd.chi_ = (float *)mxGetData(mxpd->chi_);
+      |               ^
+pd_tgv_mex.c:69:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   69 |     pd.eta_ = (float *)mxGetData(mxpd->eta_);
+      |               ^
+pd_tgv_mex.c:70:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   70 |     pd.w_   = (float *)mxGetData(mxpd->w_);
+      |               ^
+pd_tgv_mex.c:72:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   72 |     pd.nu = (float *)mxGetData(mxpd->nu);
+      |             ^
+pd_tgv_mex.c:73:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   73 |     pd.p  = (float *)mxGetData(mxpd->p);
+      |             ^
+pd_tgv_mex.c:74:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   74 |     pd.q  = (float *)mxGetData(mxpd->q);
+      |             ^
+pd_tgv_mex.c:76:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   76 |     pd.f = (float *)mxGetData(mxpd->f);
+      |            ^
+pd_tgv_mex.c:77:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   77 |     pd.m = (uint8_t *)mxGetData(mxpd->m);
+      |            ^
+pd_tgv_mex.c:78:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   78 |     pd.mi = (uint8_t *)mxGetData(mxpd->mi);
+      |             ^
+pd_tgv_mex.c:79:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   79 |     pd.mb = (uint32_t *)mxGetData(mxpd->mb);
+      |             ^
+pd_tgv_mex.c:80:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   80 |     pd.chi0 = (float *)mxGetData(mxpd->chi0);
+      |               ^
+pd_tgv_mex.c:81:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   81 |     pd.eta0 = (float *)mxGetData(mxpd->eta0);
+      |               ^
+pd_tgv_mex.c:100: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  100 |     #pragma omp parallel for private(l) schedule(static)
+      |
+pd_tgv_mex.c:113:9: warning: implicit declaration of function ‘mexPrintf’ [-Wimplicit-function-declaration]
+  113 |         mexPrintf("Iter\t\t||delta chi||\t||delta eta||\n");
+      |         ^~~~~~~~~
+pd_tgv_mex.c:119: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  119 |             #pragma omp parallel for private(l) schedule(static)
+      |
+pd_tgv_mex.c: In function ‘mx_pdd’:
+pd_tgv_mex.c:155:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  155 |     const size_t *sz = (const size_t *)mxGetDimensions(mxpd->f);
+      |                        ^
+pd_tgv_mex.c:159:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  159 |     pd.chi  = (double *)mxGetData(mxpd->chi);
+      |               ^
+pd_tgv_mex.c:160:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  160 |     pd.eta  = (double *)mxGetData(mxpd->eta);
+      |               ^
+pd_tgv_mex.c:161:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  161 |     pd.w    = (double *)mxGetData(mxpd->w);
+      |               ^
+pd_tgv_mex.c:162:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  162 |     pd.chi_ = (double *)mxGetData(mxpd->chi_);
+      |               ^
+pd_tgv_mex.c:163:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  163 |     pd.eta_ = (double *)mxGetData(mxpd->eta_);
+      |               ^
+pd_tgv_mex.c:164:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  164 |     pd.w_   = (double *)mxGetData(mxpd->w_);
+      |               ^
+pd_tgv_mex.c:166:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  166 |     pd.nu = (double *)mxGetData(mxpd->nu);
+      |             ^
+pd_tgv_mex.c:167:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  167 |     pd.p  = (double *)mxGetData(mxpd->p);
+      |             ^
+pd_tgv_mex.c:168:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  168 |     pd.q  = (double *)mxGetData(mxpd->q);
+      |             ^
+pd_tgv_mex.c:170:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  170 |     pd.f = (double *)mxGetData(mxpd->f);
+      |            ^
+pd_tgv_mex.c:171:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  171 |     pd.m = (uint8_t *)mxGetData(mxpd->m);
+      |            ^
+pd_tgv_mex.c:172:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  172 |     pd.mi = (uint8_t *)mxGetData(mxpd->mi);
+      |             ^
+pd_tgv_mex.c:173:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  173 |     pd.mb = (uint32_t *)mxGetData(mxpd->mb);
+      |             ^
+pd_tgv_mex.c:174:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  174 |     pd.chi0 = (double *)mxGetData(mxpd->chi0);
+      |               ^
+pd_tgv_mex.c:175:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  175 |     pd.eta0 = (double *)mxGetData(mxpd->eta0);
+      |               ^
+pd_tgv_mex.c:194: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  194 |     #pragma omp parallel for private(l) schedule(static)
+      |
+pd_tgv_mex.c:213: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  213 |             #pragma omp parallel for private(l) schedule(static)
+      |
+pd_tgv_mex.c: In function ‘update_dualf_tgv’:
+pd_tgv_mex.c:321: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  321 |     #pragma omp parallel for private(i,j,k,l,x) schedule(static) \
+      |
+pd_tgv_mex.c: In function ‘update_duald_tgv’:
+pd_tgv_mex.c:482: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  482 |     #pragma omp parallel for private(i,j,k,l,x) schedule(static) \
+      |
+pd_tgv_mex.c: In function ‘update_primalf_tgv’:
+pd_tgv_mex.c:645: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  645 |     #pragma omp parallel for private(i,j,k,l,x,y,z) schedule(static) \
+      |
+pd_tgv_mex.c: In function ‘update_primald_tgv’:
+pd_tgv_mex.c:810: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  810 |     #pragma omp parallel for private(i,j,k,l,x,y,z) schedule(static) \
+      |
+pd_tgv_mex.c: In function ‘convergence_checkd_tgv’:
+pd_tgv_mex.c:909: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  909 |     #pragma omp parallel for private(l) \
+      |
+pd_tgv_mex.c: In function ‘convergence_checkf’:
+pd_tgv_mex.c:943: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  943 |     #pragma omp parallel for private(l) \
+      |
+pd_tgv_mex.c: In function ‘init_bitmask’:
+pd_tgv_mex.c:987: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  987 |     #pragma omp parallel for private(i,j,k,l,b,f,o) schedule(static) \
+      |
+At top level:
+pd_tgv_mex.c:964:1: warning: ‘init_bitmask’ defined but not used [-Wunused-function]
+  964 | init_bitmask(uint32_t *mb, uint8_t *mi, const uint8_t *m, const size_t *sz)
+      | ^~~~~~~~~~~~
+pd_tgv_mex.c:147:1: warning: ‘mx_pdd’ defined but not used [-Wunused-function]
+  147 | mx_pdd(struct PD_TGV *mxpd,
+      | ^~~~~~
+pd_tgv_mex.c:53:1: warning: ‘mx_pdf’ defined but not used [-Wunused-function]
+   53 | mx_pdf(struct PD_TGV *mxpd,
+      | ^~~~~~
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o pd_tv_mex.o pd_tv_mex.c
+pd_tv_mex.c: In function ‘mx_pdf’:
+pd_tv_mex.c:60:36: warning: implicit declaration of function ‘mxGetNumberOfElements’ [-Wimplicit-function-declaration]
+   60 |     const size_t N = (const size_t)mxGetNumberOfElements(mxpd->f);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~
+pd_tv_mex.c:61:40: warning: implicit declaration of function ‘mxGetDimensions’
+-Wimplicit-function-declaration]
+   61 |     const size_t *sz = (const size_t *)mxGetDimensions(mxpd->f);
+      |                                        ^~~~~~~~~~~~~~~
+pd_tv_mex.c:61:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   61 |     const size_t *sz = (const size_t *)mxGetDimensions(mxpd->f);
+      |                        ^
+pd_tv_mex.c:65:24: warning: implicit declaration of function ‘mxGetData’ [-Wimplicit-function-declaration]
+   65 |     pd.chi  = (float *)mxGetData(mxpd->chi);
+      |                        ^~~~~~~~~
+pd_tv_mex.c:65:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   65 |     pd.chi  = (float *)mxGetData(mxpd->chi);
+      |               ^
+pd_tv_mex.c:66:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   66 |     pd.eta  = (float *)mxGetData(mxpd->eta);
+      |               ^
+pd_tv_mex.c:67:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   67 |     pd.chi_ = (float *)mxGetData(mxpd->chi_);
+      |               ^
+pd_tv_mex.c:68:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   68 |     pd.eta_ = (float *)mxGetData(mxpd->eta_);
+      |               ^
+pd_tv_mex.c:70:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   70 |     pd.nu = (float *)mxGetData(mxpd->nu);
+      |             ^
+pd_tv_mex.c:71:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   71 |     pd.p = (float *)mxGetData(mxpd->p);
+      |            ^
+pd_tv_mex.c:73:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   73 |     pd.f = (float *)mxGetData(mxpd->f);
+      |            ^
+pd_tv_mex.c:74:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   74 |     pd.m = (uint8_t *)mxGetData(mxpd->m);
+      |            ^
+pd_tv_mex.c:75:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   75 |     pd.mi = (uint8_t *)mxGetData(mxpd->mi);
+      |             ^
+pd_tv_mex.c:76:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   76 |     pd.mb = (uint32_t *)mxGetData(mxpd->mb);
+      |             ^
+pd_tv_mex.c:77:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   77 |     pd.chi0 = (float *)mxGetData(mxpd->chi0);
+      |               ^
+pd_tv_mex.c:78:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   78 |     pd.eta0 = (float *)mxGetData(mxpd->eta0);
+      |               ^
+pd_tv_mex.c:94: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   94 |     #pragma omp parallel for private(l) schedule(static)
+      |
+pd_tv_mex.c:107:9: warning: implicit declaration of function ‘mexPrintf’ [-Wimplicit-function-declaration]
+  107 |         mexPrintf("Iter\t\t||delta chi||\t||delta eta||\n");
+      |         ^~~~~~~~~
+pd_tv_mex.c:113: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  113 |             #pragma omp parallel for private(l) schedule(static)
+      |
+pd_tv_mex.c: In function ‘mx_pdd’:
+pd_tv_mex.c:149:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  149 |     const size_t *sz = (const size_t *)mxGetDimensions(mxpd->f);
+      |                        ^
+pd_tv_mex.c:153:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  153 |     pd.chi  = (double *)mxGetData(mxpd->chi);
+      |               ^
+pd_tv_mex.c:154:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  154 |     pd.eta  = (double *)mxGetData(mxpd->eta);
+      |               ^
+pd_tv_mex.c:155:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  155 |     pd.chi_ = (double *)mxGetData(mxpd->chi_);
+      |               ^
+pd_tv_mex.c:156:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  156 |     pd.eta_ = (double *)mxGetData(mxpd->eta_);
+      |               ^
+pd_tv_mex.c:158:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  158 |     pd.nu = (double *)mxGetData(mxpd->nu);
+      |             ^
+pd_tv_mex.c:159:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  159 |     pd.p = (double *)mxGetData(mxpd->p);
+      |            ^
+pd_tv_mex.c:161:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  161 |     pd.f = (double *)mxGetData(mxpd->f);
+      |            ^
+pd_tv_mex.c:162:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  162 |     pd.m = (uint8_t *)mxGetData(mxpd->m);
+      |            ^
+pd_tv_mex.c:163:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  163 |     pd.mi = (uint8_t *)mxGetData(mxpd->mi);
+      |             ^
+pd_tv_mex.c:164:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  164 |     pd.mb = (uint32_t *)mxGetData(mxpd->mb);
+      |             ^
+pd_tv_mex.c:165:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  165 |     pd.chi0 = (double *)mxGetData(mxpd->chi0);
+      |               ^
+pd_tv_mex.c:166:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  166 |     pd.eta0 = (double *)mxGetData(mxpd->eta0);
+      |               ^
+pd_tv_mex.c:182: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  182 |     #pragma omp parallel for private(l) schedule(static)
+      |
+pd_tv_mex.c:201: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  201 |             #pragma omp parallel for private(l) schedule(static)
+      |
+pd_tv_mex.c: In function ‘update_dualf_tv’:
+pd_tv_mex.c:287: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  287 |     #pragma omp parallel for private(i,j,k,l,x) schedule(static) \
+      |
+pd_tv_mex.c: In function ‘update_duald_tv’:
+pd_tv_mex.c:390: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  390 |     #pragma omp parallel for private(i,j,k,l,x) schedule(static) \
+      |
+pd_tv_mex.c: In function ‘update_primalf_tv’:
+pd_tv_mex.c:494: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  494 |     #pragma omp parallel for private(i,j,k,l,x,y,z) schedule(static) \
+      |
+pd_tv_mex.c: In function ‘update_primald_tv’:
+pd_tv_mex.c:601: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  601 |     #pragma omp parallel for private(i,j,k,l,x,y,z) schedule(static) \
+      |
+pd_tv_mex.c: In function ‘convergence_checkd_tv’:
+pd_tv_mex.c:664: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  664 |     #pragma omp parallel for private(l) \
+      |
+pd_tv_mex.c: In function ‘convergence_checkf_tv’:
+pd_tv_mex.c:698: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  698 |     #pragma omp parallel for private(l) \
+      |
+pd_tv_mex.c: In function ‘init_bitmask’:
+pd_tv_mex.c:742: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  742 |     #pragma omp parallel for private(i,j,k,l,b,f,o) schedule(static) \
+      |
+At top level:
+pd_tv_mex.c:719:1: warning: ‘init_bitmask’ defined but not used [-Wunused-function]
+  719 | init_bitmask(uint32_t *mb, uint8_t *mi, const uint8_t *m, const size_t *sz)
+      | ^~~~~~~~~~~~
+pd_tv_mex.c:141:1: warning: ‘mx_pdd’ defined but not used [-Wunused-function]
+  141 | mx_pdd(struct PD_TV *mxpd,
+      | ^~~~~~
+pd_tv_mex.c:53:1: warning: ‘mx_pdf’ defined but not used [-Wunused-function]
+   53 | mx_pdf(struct PD_TV *mxpd,
+      | ^~~~~~
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o prolong_mex.o prolong_mex.c
+prolong_mex.c: In function ‘prolongf’:
+prolong_mex.c:41: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   41 |     #pragma omp parallel for private(i2,j2,k2,l2,lk2,l,lk) schedule(static) \
+      |
+prolong_mex.c:17:18: warning: unused variable ‘nz’ [-Wunused-variable]
+   17 |     const size_t nz = sz[2];
+      |                  ^~
+prolong_mex.c: In function ‘prolongd’:
+prolong_mex.c:158: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  158 |     #pragma omp parallel for private(i2,j2,k2,l2,lk2,l,lk) schedule(static) \
+      |
+prolong_mex.c:134:18: warning: unused variable ‘nz’ [-Wunused-variable]
+  134 |     const size_t nz = sz[2];
+      |                  ^~
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o residual_mex.o residual_mex.c
+residual_mex.c: In function ‘residualf’:
+residual_mex.c:28:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   28 |     printf("INSIDE residualf :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |     ^~~~~~
+residual_mex.c:28:5: warning: incompatible implicit declaration of built-in function ‘printf’
+residual_mex.c:5:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    4 | #include "residual_mex.h"
+  +++ |+#include <stdio.h>
+    5 |
+residual_mex.c:28:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   28 |     printf("INSIDE residualf :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |                                               ~^                ~~
+      |                                                |                |
+      |                                                int              size_t {aka const long unsigned int}
+      |                                               %ld
+residual_mex.c:28:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   28 |     printf("INSIDE residualf :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |                                                    ~^               ~~
+      |                                                     |               |
+      |                                                     int             size_t {aka const long unsigned int}
+      |                                                    %ld
+residual_mex.c:28:58: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   28 |     printf("INSIDE residualf :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny,
+nz);
+      |                                                         ~^
+~~
+      |                                                          |
+|
+      |                                                          int
+size_t {aka const long unsigned int}
+      |                                                         %ld
+residual_mex.c:31: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   31 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+residual_mex.c: In function ‘residuald’:
+residual_mex.c:74:5: warning: incompatible implicit declaration of built-in function ‘printf’
+   74 |     printf("INSIDE residuald :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |     ^~~~~~
+residual_mex.c:74:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+residual_mex.c:74:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   74 |     printf("INSIDE residuald :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |                                               ~^                ~~
+      |                                                |                |
+      |                                                int              size_t {aka const long unsigned int}
+      |                                               %ld
+residual_mex.c:74:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   74 |     printf("INSIDE residuald :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |                                                    ~^               ~~
+      |                                                     |               |
+      |                                                     int             size_t {aka const long unsigned int}
+      |                                                    %ld
+residual_mex.c:74:58: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   74 |     printf("INSIDE residuald :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny,
+nz);
+      |                                                         ~^
+~~
+      |                                                          |
+|
+      |                                                          int
+size_t {aka const long unsigned int}
+      |                                                         %ld
+residual_mex.c:77: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   77 |     #pragma omp parallel for private(i,j,k,l) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o restrict_mex.o restrict_mex.c
+restrict_mex.c: In function ‘restrictf’:
+restrict_mex.c:30:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   30 |     printf("INSIDE restrictf :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |     ^~~~~~
+restrict_mex.c:30:5: warning: incompatible implicit declaration of built-in function ‘printf’
+restrict_mex.c:5:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    4 | #include "restrict_mex.h"
+  +++ |+#include <stdio.h>
+    5 |
+restrict_mex.c:30:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   30 |     printf("INSIDE restrictf :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |                                               ~^                ~~
+      |                                                |                |
+      |                                                int              size_t {aka const long unsigned int}
+      |                                               %ld
+restrict_mex.c:30:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   30 |     printf("INSIDE restrictf :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |                                                    ~^               ~~
+      |                                                     |               |
+      |                                                     int             size_t {aka const long unsigned int}
+      |                                                    %ld
+restrict_mex.c:30:58: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   30 |     printf("INSIDE restrictf :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny,
+nz);
+      |                                                         ~^
+~~
+      |                                                          |
+|
+      |                                                          int
+size_t {aka const long unsigned int}
+      |                                                         %ld
+restrict_mex.c:31:51: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   31 |     printf("INSIDE restrictf :nx2, ny2, nz2 = : [%d] [%d] [%d]\n", nx2, ny2, nz2);
+      |                                                  ~^                ~~~
+      |                                                   |                |
+      |                                                   int              size_t {aka const long unsigned int}
+      |                                                  %ld
+restrict_mex.c:31:56: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   31 |     printf("INSIDE restrictf :nx2, ny2, nz2 = : [%d] [%d] [%d]\n", nx2,
+ny2, nz2);
+      |                                                       ~^
+~~~
+      |                                                        |
+|
+      |                                                        int
+size_t {aka const long unsigned int}
+      |                                                       %ld
+restrict_mex.c:31:61: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+   31 |     printf("INSIDE restrictf :nx2, ny2, nz2 = : [%d] [%d] [%d]\n", nx2, ny2, nz2);
+      |                                                            ~^                ~~~
+      |                                                             |                |
+      |                                                             int              size_t {aka const long unsigned int}
+      |                                                            %ld
+restrict_mex.c:86: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   86 |     #pragma omp parallel for private(i2,j2,k2,l2,lk2,l,lk) schedule(static) \
+      |
+restrict_mex.c: In function ‘restrictd’:
+restrict_mex.c:164:5: warning: incompatible implicit declaration of built-in function ‘printf’
+  164 |     printf("INSIDE restrictd :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |     ^~~~~~
+restrict_mex.c:164:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+restrict_mex.c:164:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+  164 |     printf("INSIDE restrictd :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |                                               ~^                ~~
+      |                                                |                |
+      |                                                int              size_t {aka const long unsigned int}
+      |                                               %ld
+restrict_mex.c:164:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+  164 |     printf("INSIDE restrictd :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny, nz);
+      |                                                    ~^               ~~
+      |                                                     |               |
+      |                                                     int             size_t {aka const long unsigned int}
+      |                                                    %ld
+restrict_mex.c:164:58: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+  164 |     printf("INSIDE restrictd :nx, ny, nz = : [%d] [%d] [%d]\n", nx, ny,
+nz);
+      |                                                         ~^
+~~
+      |                                                          |
+|
+      |                                                          int
+size_t {aka const long unsigned int}
+      |                                                         %ld
+restrict_mex.c:165:51: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+  165 |     printf("INSIDE restrictd :nx2, ny2, nz2 = : [%d] [%d] [%d]\n", nx2, ny2, nz2);
+      |                                                  ~^                ~~~
+      |                                                   |                |
+      |                                                   int              size_t {aka const long unsigned int}
+      |                                                  %ld
+restrict_mex.c:165:56: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+  165 |     printf("INSIDE restrictd :nx2, ny2, nz2 = : [%d] [%d] [%d]\n", nx2,
+ny2, nz2);
+      |                                                       ~^
+~~~
+      |                                                        |
+|
+      |                                                        int
+size_t {aka const long unsigned int}
+      |                                                       %ld
+restrict_mex.c:165:61: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘size_t’ {aka ‘const long unsigned int’} [-Wformat=]
+  165 |     printf("INSIDE restrictd :nx2, ny2, nz2 = : [%d] [%d] [%d]\n", nx2, ny2, nz2);
+      |                                                            ~^                ~~~
+      |                                                             |                |
+      |                                                             int              size_t {aka const long unsigned int}
+      |                                                            %ld
+restrict_mex.c:222: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  222 |     #pragma omp parallel for private(i2,j2,k2,l2,lk2,l,lk) schedule(static) \
+      |
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o mx_util.o mx_util.c
+mx_util.c: In function ‘mx_pad_boundary’:
+mx_util.c:26:17: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   26 |     double* x = mxx;
+      |                 ^~~
+mx_util.c:31: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   31 | #pragma omp parallel for schedule(static) collapse(3) \
+      |
+mx_util.c: In function ‘mx_unpad_boundary’:
+mx_util.c:69:5: warning: multi-line comment [-Wcomment]
+   69 |     //    #pragma omp parallel for schedule(static) collapse(3) \
+      |     ^
+mx_util.c:83: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+   83 |         #pragma omp parallel for schedule(static) collapse(3) \
+      |
+mx_util.c:97:5: warning: multi-line comment [-Wcomment]
+   97 |     //    #pragma omp parallel for schedule(static) collapse(3) \
+      |     ^
+mx_util.c: In function ‘mx_zero’:
+mx_util.c:113:17: warning: unused parameter ‘mxx’ [-Wunused-parameter]
+  113 | mx_zero(double* mxx)
+      |         ~~~~~~~~^~~
+gcc   -std=c99 -fPIC -Wall -Wextra -O2 -g     -c -o mx_blas.o mx_blas.c
+mx_blas.c: In function ‘mx_scal’:
+mx_blas.c:61:16: warning: passing argument 2 of ‘dscal_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   61 |     dscal_(&n, &a, x, &incx);
+      |                ^~
+mx_blas.c:20:40: note: expected ‘double *’ but argument is of type ‘const double *’
+   20 | extern double dscal_(const ptrdiff_t*, double*, double*, const ptrdiff_t*);
+      |                                        ^~~~~~~
+mx_blas.c: In function ‘mx_axpy’:
+mx_blas.c:105:16: warning: passing argument 2 of ‘daxpy_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  105 |     daxpy_(&n, &a, x, &incx, y, &incy);
+      |                ^~
+mx_blas.c:18:40: note: expected ‘double *’ but argument is of type ‘const double *’
+   18 | extern double daxpy_(const ptrdiff_t*, double*, double*, const ptrdiff_t*, double*, const ptrdiff_t*);
+      |                                        ^~~~~~~
+mx_blas.c:105:20: warning: passing argument 3 of ‘daxpy_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  105 |     daxpy_(&n, &a, x, &incx, y, &incy);
+      |                    ^
+mx_blas.c:18:49: note: expected ‘double *’ but argument is of type ‘const double *’
+   18 | extern double daxpy_(const ptrdiff_t*, double*, double*, const ptrdiff_t*, double*, const ptrdiff_t*);
+      |                                                 ^~~~~~~
+mx_blas.c: In function ‘mx_dot’:
+mx_blas.c:126:19: warning: passing argument 2 of ‘ddot_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  126 |     p = ddot_(&n, x, &incx, y, &incy);
+      |                   ^
+mx_blas.c:16:39: note: expected ‘double *’ but argument is of type ‘const double *’
+   16 | extern double ddot_(const ptrdiff_t*, double*, const ptrdiff_t*, double*, const ptrdiff_t*);
+      |                                       ^~~~~~~
+mx_blas.c:126:29: warning: passing argument 4 of ‘ddot_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  126 |     p = ddot_(&n, x, &incx, y, &incy);
+      |                             ^
+mx_blas.c:16:66: note: expected ‘double *’ but argument is of type ‘const double *’
+   16 | rn double ddot_(const ptrdiff_t*, double*, const ptrdiff_t*, double*, const ptrdiff_t*);
+      |                                                              ^~~~~~~
+
+mx_blas.c: In function ‘mx_nrm2’:
+mx_blas.c:145:20: warning: passing argument 2 of ‘dnrm2_’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  145 |     p = dnrm2_(&n, mxx, &incx);
+      |                    ^~~
+mx_blas.c:15:40: note: expected ‘double *’ but argument is of type ‘const double *’
+   15 | extern double dnrm2_(const ptrdiff_t*, double*, const ptrdiff_t*);
+      |                                        ^~~~~~~
+gcc   -shared    -lm /home/npant/comp4812/libs/libblas.a /home/npant/comp4812/libs/liblapack.a -o libjulia_qsm.so boundary_mask_l1_mex.o boundary_mask_mex.o coarsen_grid_mex.o correct_mex.o fmg_mex.o gauss_seidel_mex.o gradb_adj_mex.o gradb_mex.o gradbm_adj_mex.o gradbm_mex.o gradc_mex.o gradcm_mex.o gradf_adj_mex.o gradf_mex.o gradfm_adj_mex.o gradfm_mex.o gradfp_adj_mex.o gradfp_mex.o lap1_mex.o lapmg_mex.o lapw_mex.o mg_mex.o mgpcg_mex.o norm2_mex.o pd_tgv_mex.o pd_tv_mex.o prolong_mex.o residual_mex.o restrict_mex.o mx_util.o mx_blas.o
